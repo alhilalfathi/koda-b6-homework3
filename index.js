@@ -12,15 +12,15 @@ const dataNama = ["joni","jane","john","mikael","mikaya","Mamika"]
 
 // }
 // searchStudent("joni")
-// let dataSet = []
-// for(i=0; i<=dataNama.length-1; i++){
-//         for(j=0; j<=dataNama[i].length-1; j++){
-//             console.log(dataNama[i][j])
-//             dataSet.push(dataNama[i][j])
-//             // dataSet += dataNama[i][j]
+let dataSet = []
+for(i=0; i<=dataNama.length-1; i++){
+        for(j=0; j<=dataNama[i].length-1; j++){
+            console.log(dataNama[i][j])
+            dataSet.push(dataNama[i][j])
+            // dataSet += dataNama[i][j]
 
             
-//         }
-//         console.log("--------------")
-//     }
-// console.log(dataSet)
+        }
+        console.log("--------------")
+    }
+console.log(dataSet)
