@@ -2,25 +2,34 @@ const dataNama = ["joni","jane","john","mikael","mikaya","Mamika"]
 
 
 
-// function searchStudent (nama,countResult){
-//     for(i=0; i<=dataNama.length-1; i++){
-//         for(j=0; j<=dataNama[i]; j++){
+function searchStudent (nama,countResult){
+    for(let i=0; i<dataNama.length; i++){
+        for(let j=0; j<=dataNama[i].length-1; j++){
+            // console.log(dataNama[i][j])
+            // console.log("---"+nama[0])
+            if (dataNama[i][j] === nama [0]){
+                for (let k=0; k<nama.length; k++){
+                    if (dataNama[i][j+k]===nama[k]){
+                        console.log(nama[k])
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+// searchStudent("joni")
+// let dataSet = []
+// for(i=0; i<dataNama.length; i++){
+//         for(j=0; j<dataNama[i].length; j++){
 //             console.log(dataNama[i][j])
+//             // dataSet.push(dataNama[i][j])
+//             // dataSet += dataNama[i][j]
+            
+            
 //         }
         
 //     }
-
-// }
-// searchStudent("joni")
-let dataSet = []
-for(i=0; i<=dataNama.length-1; i++){
-        for(j=0; j<=dataNama[i].length-1; j++){
-            console.log(dataNama[i][j])
-            dataSet.push(dataNama[i][j])
-            // dataSet += dataNama[i][j]
-
-            
-        }
-        console.log("--------------")
-    }
-console.log(dataSet)
+searchStudent("joni")
+// console.log(dataSet)
